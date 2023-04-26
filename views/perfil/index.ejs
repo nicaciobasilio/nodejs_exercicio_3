@@ -26,19 +26,18 @@
         <h1>Perfil</h1>
     </header>
     <div class="container">
-        <section>
-            <img src="../../uploads/foto_perfil.jpg" alt="Foto de perfil">
-        </section>
+        <% for (let i = 0; i < perfis.length; i++) { %>
         <section>
             <ul>
                 <li>
-                    Nome: <%= perfil.nome %>
+                    Nome: <%= perfis[i].dados.nome %>
                 </li>
                 <li>
-                    Idade: <%= perfil.idade %>
+                    Idade: <%= perfis[i].dados.idade %>
                 </li>
             </ul>
         </section>
+        <% } %>
     </div>
 </body>
 </html>

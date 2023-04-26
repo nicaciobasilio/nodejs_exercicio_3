@@ -1,13 +1,15 @@
 const { Schema } = require('mongoose');
 
 const Perfil = new Schema({
-    nome: {
-        type: String,
-        required: true,
-    },
-    idade: {
-        type: Number,
-        required: true,
+    dados: {
+        nome: {
+            type: String,
+            require: true
+        },
+        idade: {
+            type: Number,
+            require: true
+        }
     }
 });
 
